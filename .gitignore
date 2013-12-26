@@ -3,6 +3,8 @@
 *.lo
 *.o
 *.csv
+*.exe
+*.obj
 
 # Compiled Dynamic libraries
 *.so

@@ -51,26 +51,6 @@ void getTopFeatureRequests() {
 	send(ownerTid, true);
 }
 
-class Timer
-{
-	static long getCount()
-	{
-		asm
-		{	naked	;
-			rdtsc	;
-			ret	;
-		}
-	}
-	
-	long starttime;
-	
-	this() { starttime = getCount(); }
-	~this()
-	{
-		writefln("elapsed time = %s", getCount() - starttime);
-	}
-}
-
 void main(string[] args)
 {
 	//scope bench = new Timer();
